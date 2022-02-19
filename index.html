@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="script.js">
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="./images/leaselabs_logo_fullstack_rgb.png" alt="" />
+		</div>
+
+		<div class="pages">
+			<div class="links">
+				<div class="link-text">
+					<a href="">HOME</a>
+				</div>
+				<div class="link-text">
+					<a href="">OUR WORK</a>
+				</div>
+				<div class="link-text">
+					<a href="">ABOUT US</a>
+				</div>
+				<div class="link-text">
+					<a href="">CONTACT US</a>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="specials">
+			<a href="">SPECIALS</a>
+		</div>
+	</div>
+
+	<div class="side-nav">
+		<div class="nav-titles">
+			<p>SUBNAV</p>
+			<div class="nav-list">
+				<ul>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav-titles">
+			<p>RELATED LINKS</p>
+			<div class="nav-list">
+				<ul>
+					<li>Link 1</li>
+					<li>Link 2</li>
+					<li>Link 3</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="body-h1">
+		<div class="body-headings">
+			<h1>HEADING 1</h1>
+			<h2>heading 2</h2>
+		</div>
+		<div class="body-para">
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio sequi nobis pariatur deleniti nisi animi
+				iusto omnis consequuntur aliquam, expedita aspernatur hic voluptatum aut em ipsum dolor sit, amet
+				consectetur adipisicing elit. Optio sequi nobis pariatur deleniti nisi animi
+				iusto omnis consequuntur aliquam, expedita aspernatur hic voluptatum aut facere at sit, ut ad rem?</p>
+			<br>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio sequi nobis pariatur deleniti nisi animi
+				iusto omnis consequuntur aliquam, expedita aspernatur hic vem ipsum dolor sit, amet consectetur
+				adipisicing elit. Optio sequi nobis pariatur deleniti nisi animi
+				iusto omnis consequuntur aliquam, expedita aspernatur hic voluptatum aut oluptatum aut facere at sit, ut
+				ad rem?</p>
+			<br>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio sequi nobis pariatur deleniti nisi animi
+				iusto omnis consequuntur aliquam, expeem ipsum dolor sit, amet consectetur adipisicing elit. Optio sequi
+				nobis pariatur deleniti nisi animi
+				iusto omnis consequuntur aliquam, expedita aspernatur hic voluptatum aut dita aspernatur hic voluptatum
+				aut facere at sit, ut ad rem?</p>
+		</div>
+		<div class="photos">
+			<div class="image">
+				<img id="man_img" alt="image of a man from long ago">
+				<div class="image__overlay">
+					<div class="image__title">
+						<h2 id="man_name"></h2>
+					</div>
+					<p id="man_desc" class="image__description"></p>
+
+				</div>
+			</div>
+			<div class="image">
+				<img id="wizard_img" alt="image of a magica wizard">
+				<div class="image__overlay">
+					<div class="image__title">
+						<h2 id="wizard_name"></h2>
+					</div>
+					<p id="wizard_desc" class="image__description"></p>
+
+				</div>
+			</div>
+			<div class="image">
+				<img id="beast_img" alt="image of a mythical beasat">
+				<div class="image__overlay">
+					<div class="image__title">
+						<h2 id="beast_name"></h2>
+					</div>
+					<p id="beast_desc" class="image__description"></p>
+
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<script type="text/javascript">
+
+		document.getElementById("wizard_desc").innerHTML = images.wizard.description
+		document.getElementById("wizard_name").innerHTML = images.wizard.heading
+		document.getElementById("man_name").innerHTML = images.man.heading
+		document.getElementById("man_desc").innerHTML = images.man.description
+		document.getElementById("beast_name").innerHTML = images.beast.heading
+		document.getElementById("beast_desc").innerHTML = images.beast.description
+
+		document.getElementById("beast_img").src = images.beast.path
+		document.getElementById("man_img").src = images.man.path
+		document.getElementById("wizard_img").src = images.wizard.path
+
+	</script>
+
+</body>
+
+</html>
